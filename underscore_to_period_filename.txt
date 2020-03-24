@@ -1,0 +1,7 @@
+## Rename FILE.NAME16.FA to FILE_NAME16.fa
+
+# replace all . with _
+for i in *.*.fa; do mv "$i" "${i//./_}"; done
+
+# change _fa ending to .fa
+for i in *_fa; do  mv "$i" "${i//_fa/.fa}"; done
